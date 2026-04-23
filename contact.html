@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我 · 杨岑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="subpage-nav">
+    <a href="index.html" class="back-link">← 返回首页</a>
+  </nav>
+  <div class="page content-page">
+    <header class="content-header">
+      <h1 class="content-title">联系我</h1>
+    </header>
+
+    <div class="contact-channels">
+      <p class="contact-phone">手机：<a href="tel:15011264432">15011264432</a></p>
+      <p class="contact-email">邮箱：<a href="mailto:yangcen2015@163.com">yangcen2015@163.com</a></p>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <label class="field">
+        <span class="field-label">姓名</span>
+        <input type="text" name="name" autocomplete="name" required placeholder="您的姓名" />
+      </label>
+      <label class="field">
+        <span class="field-label">邮箱</span>
+        <input type="email" name="email" autocomplete="email" required placeholder="your@email.com" />
+      </label>
+      <label class="field">
+        <span class="field-label">主题</span>
+        <input type="text" name="subject" required placeholder="邮件主题" />
+      </label>
+      <label class="field">
+        <span class="field-label">留言</span>
+        <textarea name="message" rows="5" required placeholder="请输入留言内容"></textarea>
+      </label>
+      <button type="submit" class="submit-btn">通过邮件发送</button>
+      <p class="form-note">提交后将打开系统默认邮件客户端；若未安装客户端，请直接复制上方邮箱地址联系。</p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
